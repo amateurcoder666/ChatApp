@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".Activity2">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="∞"
+        android:fontFamily="@font/robottoregular"
+        android:textColor="#d4af37"
+        android:layout_marginTop="10dp"
+        android:textSize="70sp"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/fun" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/call_func"
+        android:layout_marginTop="10dp"
+        android:textSize="30sp"
+        android:hint="Enter Phone Number"
+        android:textColorHint="#d4af37"
+        android:digits="1234567890"
+        android:maxLength="10"
+        android:inputType="phone"
+        />
+    <ImageButton
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/call_bt"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/call_bg"
+        android:src="@drawable/ic_baseline_call_24"
+    />
+
+
+</LinearLayout>
